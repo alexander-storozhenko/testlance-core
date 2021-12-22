@@ -53,10 +53,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/storozhenko/testlance-app/vendor/testlance-core
+CMAKE_SOURCE_DIR = /Users/storozhenko/testlance-core
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/storozhenko/testlance-app/vendor/testlance-core/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/storozhenko/testlance-core/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/testlance_core.dir/depend.make
@@ -68,29 +68,59 @@ include CMakeFiles/testlance_core.dir/flags.make
 
 CMakeFiles/testlance_core.dir/src/main.c.o: CMakeFiles/testlance_core.dir/flags.make
 CMakeFiles/testlance_core.dir/src/main.c.o: ../src/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/storozhenko/testlance-app/vendor/testlance-core/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/testlance_core.dir/src/main.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/testlance_core.dir/src/main.c.o -c /Users/storozhenko/testlance-app/vendor/testlance-core/src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/storozhenko/testlance-core/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/testlance_core.dir/src/main.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/testlance_core.dir/src/main.c.o -c /Users/storozhenko/testlance-core/src/main.c
 
 CMakeFiles/testlance_core.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/testlance_core.dir/src/main.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/storozhenko/testlance-app/vendor/testlance-core/src/main.c > CMakeFiles/testlance_core.dir/src/main.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/storozhenko/testlance-core/src/main.c > CMakeFiles/testlance_core.dir/src/main.c.i
 
 CMakeFiles/testlance_core.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/testlance_core.dir/src/main.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/storozhenko/testlance-app/vendor/testlance-core/src/main.c -o CMakeFiles/testlance_core.dir/src/main.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/storozhenko/testlance-core/src/main.c -o CMakeFiles/testlance_core.dir/src/main.c.s
+
+CMakeFiles/testlance_core.dir/src/redis.c.o: CMakeFiles/testlance_core.dir/flags.make
+CMakeFiles/testlance_core.dir/src/redis.c.o: ../src/redis.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/storozhenko/testlance-core/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/testlance_core.dir/src/redis.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/testlance_core.dir/src/redis.c.o -c /Users/storozhenko/testlance-core/src/redis.c
+
+CMakeFiles/testlance_core.dir/src/redis.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/testlance_core.dir/src/redis.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/storozhenko/testlance-core/src/redis.c > CMakeFiles/testlance_core.dir/src/redis.c.i
+
+CMakeFiles/testlance_core.dir/src/redis.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/testlance_core.dir/src/redis.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/storozhenko/testlance-core/src/redis.c -o CMakeFiles/testlance_core.dir/src/redis.c.s
+
+CMakeFiles/testlance_core.dir/src/cache.c.o: CMakeFiles/testlance_core.dir/flags.make
+CMakeFiles/testlance_core.dir/src/cache.c.o: ../src/cache.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/storozhenko/testlance-core/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/testlance_core.dir/src/cache.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/testlance_core.dir/src/cache.c.o -c /Users/storozhenko/testlance-core/src/cache.c
+
+CMakeFiles/testlance_core.dir/src/cache.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/testlance_core.dir/src/cache.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/storozhenko/testlance-core/src/cache.c > CMakeFiles/testlance_core.dir/src/cache.c.i
+
+CMakeFiles/testlance_core.dir/src/cache.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/testlance_core.dir/src/cache.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/storozhenko/testlance-core/src/cache.c -o CMakeFiles/testlance_core.dir/src/cache.c.s
 
 # Object files for target testlance_core
 testlance_core_OBJECTS = \
-"CMakeFiles/testlance_core.dir/src/main.c.o"
+"CMakeFiles/testlance_core.dir/src/main.c.o" \
+"CMakeFiles/testlance_core.dir/src/redis.c.o" \
+"CMakeFiles/testlance_core.dir/src/cache.c.o"
 
 # External object files for target testlance_core
 testlance_core_EXTERNAL_OBJECTS =
 
 testlance_core: CMakeFiles/testlance_core.dir/src/main.c.o
+testlance_core: CMakeFiles/testlance_core.dir/src/redis.c.o
+testlance_core: CMakeFiles/testlance_core.dir/src/cache.c.o
 testlance_core: CMakeFiles/testlance_core.dir/build.make
 testlance_core: ../third_party/hiredis/libhiredis.a
 testlance_core: CMakeFiles/testlance_core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/storozhenko/testlance-app/vendor/testlance-core/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable testlance_core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/storozhenko/testlance-core/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable testlance_core"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testlance_core.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -102,6 +132,6 @@ CMakeFiles/testlance_core.dir/clean:
 .PHONY : CMakeFiles/testlance_core.dir/clean
 
 CMakeFiles/testlance_core.dir/depend:
-	cd /Users/storozhenko/testlance-app/vendor/testlance-core/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/storozhenko/testlance-app/vendor/testlance-core /Users/storozhenko/testlance-app/vendor/testlance-core /Users/storozhenko/testlance-app/vendor/testlance-core/cmake-build-debug /Users/storozhenko/testlance-app/vendor/testlance-core/cmake-build-debug /Users/storozhenko/testlance-app/vendor/testlance-core/cmake-build-debug/CMakeFiles/testlance_core.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/storozhenko/testlance-core/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/storozhenko/testlance-core /Users/storozhenko/testlance-core /Users/storozhenko/testlance-core/cmake-build-debug /Users/storozhenko/testlance-core/cmake-build-debug /Users/storozhenko/testlance-core/cmake-build-debug/CMakeFiles/testlance_core.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/testlance_core.dir/depend
 

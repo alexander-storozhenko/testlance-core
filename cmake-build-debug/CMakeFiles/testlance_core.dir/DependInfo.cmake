@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/storozhenko/testlance-app/vendor/testlance-core/src/main.c" "/Users/storozhenko/testlance-app/vendor/testlance-core/cmake-build-debug/CMakeFiles/testlance_core.dir/src/main.c.o"
+  "/Users/storozhenko/testlance-core/src/cache.c" "/Users/storozhenko/testlance-core/cmake-build-debug/CMakeFiles/testlance_core.dir/src/cache.c.o"
+  "/Users/storozhenko/testlance-core/src/main.c" "/Users/storozhenko/testlance-core/cmake-build-debug/CMakeFiles/testlance_core.dir/src/main.c.o"
+  "/Users/storozhenko/testlance-core/src/redis.c" "/Users/storozhenko/testlance-core/cmake-build-debug/CMakeFiles/testlance_core.dir/src/redis.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

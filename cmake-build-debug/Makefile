@@ -57,10 +57,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/storozhenko/testlance-app/vendor/testlance-core
+CMAKE_SOURCE_DIR = /Users/storozhenko/testlance-core
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/storozhenko/testlance-app/vendor/testlance-core/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/storozhenko/testlance-core/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/storozhenko/testlance-app/vendor/testlance-core/cmake-build-debug/CMakeFiles /Users/storozhenko/testlance-app/vendor/testlance-core/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/storozhenko/testlance-core/cmake-build-debug/CMakeFiles /Users/storozhenko/testlance-core/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/storozhenko/testlance-app/vendor/testlance-core/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/storozhenko/testlance-core/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,6 +129,30 @@ testlance_core/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testlance_core.dir/build.make CMakeFiles/testlance_core.dir/build
 .PHONY : testlance_core/fast
 
+src/cache.o: src/cache.c.o
+.PHONY : src/cache.o
+
+# target to build an object file
+src/cache.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testlance_core.dir/build.make CMakeFiles/testlance_core.dir/src/cache.c.o
+.PHONY : src/cache.c.o
+
+src/cache.i: src/cache.c.i
+.PHONY : src/cache.i
+
+# target to preprocess a source file
+src/cache.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testlance_core.dir/build.make CMakeFiles/testlance_core.dir/src/cache.c.i
+.PHONY : src/cache.c.i
+
+src/cache.s: src/cache.c.s
+.PHONY : src/cache.s
+
+# target to generate assembly for a file
+src/cache.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testlance_core.dir/build.make CMakeFiles/testlance_core.dir/src/cache.c.s
+.PHONY : src/cache.c.s
+
 src/main.o: src/main.c.o
 .PHONY : src/main.o
 
@@ -153,6 +177,30 @@ src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testlance_core.dir/build.make CMakeFiles/testlance_core.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/redis.o: src/redis.c.o
+.PHONY : src/redis.o
+
+# target to build an object file
+src/redis.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testlance_core.dir/build.make CMakeFiles/testlance_core.dir/src/redis.c.o
+.PHONY : src/redis.c.o
+
+src/redis.i: src/redis.c.i
+.PHONY : src/redis.i
+
+# target to preprocess a source file
+src/redis.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testlance_core.dir/build.make CMakeFiles/testlance_core.dir/src/redis.c.i
+.PHONY : src/redis.c.i
+
+src/redis.s: src/redis.c.s
+.PHONY : src/redis.s
+
+# target to generate assembly for a file
+src/redis.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testlance_core.dir/build.make CMakeFiles/testlance_core.dir/src/redis.c.s
+.PHONY : src/redis.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,9 +210,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... testlance_core"
+	@echo "... src/cache.o"
+	@echo "... src/cache.i"
+	@echo "... src/cache.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/redis.o"
+	@echo "... src/redis.i"
+	@echo "... src/redis.s"
 .PHONY : help
 
 
