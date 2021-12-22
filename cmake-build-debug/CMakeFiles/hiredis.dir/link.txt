@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libhiredis.a CMakeFiles/hiredis.dir/src/main.c.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libhiredis.a
