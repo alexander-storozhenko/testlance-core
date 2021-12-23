@@ -6,7 +6,7 @@
 #define TESTLANCE_CORE_REDIS_H
 #include <stdio.h>
 #include <stdlib.h>
-#include "../../third_party/hiredis/hiredis.h"
+#include <hiredis/hiredis.h>
 
 #define REDIS_PORT 6379
 #define REDIS_HOST "127.0.0.1"
