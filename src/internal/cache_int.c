@@ -2,7 +2,7 @@
 
 #define TEST_RESULTS_HASH_NAME "test_results"
 
-VALUE cache_test_result_int(VALUE _, VALUE field, VALUE value) {
+VALUE cache_test_result_int(VALUE field, VALUE value) {
     redisContext *redis = redis_connect();
 
     int rfield_len = RSTRING_LEN(field) + 1;
