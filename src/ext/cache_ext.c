@@ -10,5 +10,6 @@
 void init_cache(VALUE class) {
     VALUE cache_class = rb_define_class_under(class, CACHE_CLASS_NAME, rb_cObject);
 
-    rb_define_method(cache_class, "cache_test_result", cache_test_result, 3);
+    rb_define_method(cache_class, "cache_test_result", cache_test_result, 2);
+    rb_define_method(cache_class, "get_cached_test_result", get_cached_test_result, 1);
 }

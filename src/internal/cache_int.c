@@ -1,19 +1,29 @@
 #include "../redis.c"
+#include <stdlib.h>
 
 #define TEST_RESULTS_HASH_NAME "test_results"
 
 VALUE cache_test_result_int(VALUE field, VALUE value) {
     redisContext *redis = redis_connect();
 
-    int rfield_len = RSTRING_LEN(field) + 1;
-    char buf_field[rfield_len];
-    strlcpy(buf_field, RSTRING_PTR(field), rfield_len);
+    char field_string_buf[10];
+    snprintf(field_string_buf, 10, "%d", NUM2INT(field));
 
-    int rvalue_len = RSTRING_LEN(value) + 1;
-    char buf_value[rvalue_len];
-    strlcpy(buf_value, RSTRING_PTR(value), rvalue_len);
+    char value_string_buf[10];
+    snprintf(value_string_buf, 10, "%f", NUM2DBL(value));
 
-    redis_insert_hash(redis, TEST_RESULTS_HASH_NAME, buf_field, buf_value);
+    redis_insert_hash(redis, TEST_RESULTS_HASH_NAME, field_string_buf, value_string_buf);
 
-    return 1;
+    return INT2NUM(1);
+}
+
+VALUE get_cached_test_result_int(VALUE field) {
+    redisContext *redis = redis_connect();
+
+    char field_string_buf[10];
+    snprintf(field_string_buf, 10, "%d", NUM2INT(field));
+
+    redisReply *res = redis_get_hash_value(redis, TEST_RESULTS_HASH_NAME, field_string_buf);
+
+    return DBL2NUM(strtod(res->str, NULL));
 }

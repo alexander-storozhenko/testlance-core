@@ -36,14 +36,13 @@ redisReply *redis_insert_hash(redisContext *connection, const char* hash_name, c
     return reply;
 }
 
-
-redisReply *redis_get_hash(redisContext *connection, const char* hash_name, const char* field) {
+redisReply *redis_get_hash_value(redisContext *connection, const char* hash_name, const char* field) {
     redisReply *reply = redisCommand(connection, "HGET %s %s", hash_name, field);
 
     return reply;
 }
 
-redisReply *redis_get_all_hash(redisContext *connection, const char* hash_name, const char* field) {
+redisReply *redis_get_all_hash_values(redisContext *connection, const char* hash_name, const char* field) {
     redisReply *reply = redisCommand(connection, "HGETALL %s %s", hash_name, field);
 
     return reply;
