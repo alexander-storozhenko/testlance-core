@@ -24,6 +24,3 @@ VALUE get_cached_test_result(VALUE self, VALUE id) {
 
     return res;
 }
-
-
-
