@@ -16,7 +16,7 @@ def init_core_test
     raise unless Testlance::Core::Cache.new.cache_test_result(5, 1.2551) == 1
     raise unless Testlance::Core::Cache.new.get_cached_test_result(5) == 1.2551
 
-
+    raise unless Testlance::Core::Cache.new.cache_question_result(1, "a2Vr", 1.1)
     puts 'test success'
 end
 
